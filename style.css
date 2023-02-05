@@ -1,8 +1,107 @@
+:root {
+    --between-icons: 8%;
+    --left-icons: 8%;
+}
+
 body {
-    background-color: lightblue;
-  }
-  
-  h1 {
-    color: navy;
-    margin-left: 20px;
-  }
+    background-color: rgb(250, 255, 250);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: rgb(100,100,100);
+    font-size: 2.5vw;
+}
+
+.yttext {
+    position: fixed;
+    left: calc(var(--left-icons) - 2.5%);
+    top: calc(43vh + 7vw);
+    width: 15%;
+    height: auto;
+    text-align: center
+}
+
+.ghtext {
+    position: fixed;
+    left: calc(var(--left-icons) + 10% + 1 * var(--between-icons) - 2.5%);
+    top: calc(43vh + 7vw);
+    width: 15%;
+    height: auto;
+    text-align: center
+}
+
+.sheetstext {
+    position: fixed;
+    left: calc(var(--left-icons) + 10% * 2 + 2 * var(--between-icons) - 2.5%);
+    top: calc(43vh + 7vw);
+    width: 15%;
+    height: auto;
+    text-align: center
+}
+
+.twittertext {
+    position: fixed;
+    left: calc(var(--left-icons) + 10% * 3 + 3 * var(--between-icons) - 2.5%);
+    top: calc(43vh + 7vw);
+    width: 15%;
+    height: auto;
+    text-align: center
+}
+
+.desmostext {
+    position: fixed;
+    left: calc(var(--left-icons) + 10% * 4 + 4 * var(--between-icons) - 2.5%);
+    top: calc(43vh + 7vw);
+    width: 15%;
+    height: auto;
+    text-align: center
+}
+
+.myicon {
+    position: fixed;
+    left: 3%;
+    top: 3%;
+    width: 15%;
+    height: auto
+}
+
+.yt {
+    position: fixed;
+    left: var(--left-icons);
+    top: 40%;
+    width: 10%;
+    height: auto;
+}
+
+.gh {
+    position: fixed;
+    left: calc(var(--left-icons) + 10% + 1 * var(--between-icons));
+    top: 40%;
+    width: 10%;
+    height: auto;
+}
+
+.sheets {
+    position: fixed;
+    left: calc(var(--left-icons) + 10% * 2 + 2 * var(--between-icons));
+    top: 40%;
+    width: 10%;
+    height: auto;
+}
+
+.twitter {
+    position: fixed;
+    left: calc(var(--left-icons) + 10% * 3 + 3 * var(--between-icons));
+    top: 40%;
+    width: 10%;
+    height: auto;
+}
+
+.desmos {
+    position: fixed;
+    left: calc(var(--left-icons) + 10% * 4 + 4 * var(--between-icons));
+    top: 40%;
+    width: 10%;
+    height: auto;
+}
