@@ -31,10 +31,26 @@ h2 {
     text-align: center
 }
 
-
 .sheets {
     position: fixed;
     left: calc(var(--left-icons) + 10% * 2 + 2 * var(--between-icons));
+    top: 40%;
+    width: 10%;
+    height: auto;
+}
+
+.desmostext {
+    position: fixed;
+    left: calc(var(--left-icons) + 10% * 4 + 4 * var(--between-icons) - 2.5%);
+    top: calc(43vh + 7vw);
+    width: 15%;
+    height: auto;
+    text-align: center
+}
+
+.desmos {
+    position: fixed;
+    left: calc(var(--left-icons) + 10% * 4 + 4 * var(--between-icons));
     top: 40%;
     width: 10%;
     height: auto;
