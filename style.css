@@ -1,6 +1,7 @@
 :root {
-    --between-icons: 8%;
-    --left-icons: 8%;
+    --between-icons: 5.7%;
+    --icon-width: 10%;
+    --textbox-width: 15%;
 }
 
 body {
@@ -15,45 +16,54 @@ h2 {
 
 .yttext {
     position: fixed;
-    left: calc(var(--left-icons) - 2.5%);
+    left: calc(var(--between-icons) - (var(--textbox-width) - var(--icon-width)) / 2);
     top: calc(43vh + 7vw);
-    width: 15%;
+    width: var(--textbox-width);
     height: auto;
     text-align: center
 }
 
 .ghtext {
     position: fixed;
-    left: calc(var(--left-icons) + 10% + 1 * var(--between-icons) - 2.5%);
+    left: calc(var(--between-icons) + 1 * (var(--between-icons) + var(--icon-width)) - (var(--textbox-width) - var(--icon-width)) / 2);
     top: calc(43vh + 7vw);
-    width: 15%;
+    width: var(--textbox-width);
     height: auto;
     text-align: center
 }
 
 .sheetstext {
     position: fixed;
-    left: calc(var(--left-icons) + 10% * 2 + 2 * var(--between-icons) - 2.5%);
+    left: calc(var(--between-icons) + 2 * (var(--between-icons) + var(--icon-width)) - (var(--textbox-width) - var(--icon-width)) / 2);
     top: calc(43vh + 7vw);
-    width: 15%;
+    width: var(--textbox-width);
     height: auto;
     text-align: center
 }
 
 .twittertext {
     position: fixed;
-    left: calc(var(--left-icons) + 10% * 3 + 3 * var(--between-icons) - 2.5%);
+    left: calc(var(--between-icons) + 3 * (var(--between-icons) + var(--icon-width)) - (var(--textbox-width) - var(--icon-width)) / 2);
     top: calc(43vh + 7vw);
-    width: 15%;
+    width: var(--textbox-width);
+    height: auto;
+    text-align: center
+}
+
+.bskytext {
+    position: fixed;
+    left: calc(var(--between-icons) + 4 * (var(--between-icons) + var(--icon-width)) - (var(--textbox-width) - var(--icon-width)) / 2);
+    top: calc(43vh + 7vw);
+    width: var(--textbox-width);
     height: auto;
     text-align: center
 }
 
 .desmostext {
     position: fixed;
-    left: calc(var(--left-icons) + 10% * 4 + 4 * var(--between-icons) - 2.5%);
+    left: calc(var(--between-icons) + 5 * (var(--between-icons) + var(--icon-width)) - (var(--textbox-width) - var(--icon-width)) / 2);
     top: calc(43vh + 7vw);
-    width: 15%;
+    width: var(--textbox-width);
     height: auto;
     text-align: center
 }
@@ -68,40 +78,48 @@ h2 {
 
 .yt {
     position: fixed;
-    left: var(--left-icons);
+    left: var(--between-icons);
     top: 40%;
-    width: 10%;
+    width: var(--icon-width);
     height: auto;
 }
 
 .gh {
     position: fixed;
-    left: calc(var(--left-icons) + 10% + 1 * var(--between-icons));
+    left: calc(var(--between-icons) + 1 * (var(--between-icons) + var(--icon-width)));
     top: 40%;
-    width: 10%;
+    width: var(--icon-width);
     height: auto;
 }
 
 .sheets {
     position: fixed;
-    left: calc(var(--left-icons) + 10% * 2 + 2 * var(--between-icons));
+    left: calc(var(--between-icons) + 2 * (var(--between-icons) + var(--icon-width)));
     top: 40%;
-    width: 10%;
+    width: var(--icon-width);
     height: auto;
 }
 
 .twitter {
     position: fixed;
-    left: calc(var(--left-icons) + 10% * 3 + 3 * var(--between-icons));
+    left: calc(var(--between-icons) + 3 * (var(--between-icons) + var(--icon-width)));
     top: 40%;
-    width: 10%;
+    width: var(--icon-width);
+    height: auto;
+}
+
+.bsky {
+    position: fixed;
+    left: calc(var(--between-icons) + 4 * (var(--between-icons) + var(--icon-width)));
+    top: 40%;
+    width: var(--icon-width);
     height: auto;
 }
 
 .desmos {
     position: fixed;
-    left: calc(var(--left-icons) + 10% * 4 + 4 * var(--between-icons));
+    left: calc(var(--between-icons) + 5 * (var(--between-icons) + var(--icon-width)));
     top: 40%;
-    width: 10%;
+    width: var(--icon-width);
     height: auto;
 }
